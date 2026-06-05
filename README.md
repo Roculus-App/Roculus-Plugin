@@ -24,7 +24,9 @@ is what makes in-game moderation possible.
 ### Option 1 — Creator Store (recommended)
 Install from the Roblox Creator Store:
 **https://create.roblox.com/store/asset/127499489618942**
-It auto-updates whenever a new version is published.
+When a new version ships, Studio shows an **Update** button next to the installed
+plugin in **Plugins → Manage Plugins** — one click to update. (Roblox plugins
+don't update silently on their own.)
 
 ### Option 2 — From source (for studios who want to audit first)
 1. Download `RoculusBridgePlugin.rbxmx` from [Releases](../../releases), **or**
