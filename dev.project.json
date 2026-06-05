@@ -1,0 +1,25 @@
+{
+  "//": "Dev-mode Rojo project — for tight-loop SDK iteration without rebuilding the plugin every time.",
+  "//1": "Usage: `rojo serve Roculus_Bridge/dev.project.json` from the repo root, then click Connect in",
+  "//2": "the Rojo Studio plugin. Edits to runtime/src/* now stream into ServerScriptService.RoculusBridge",
+  "//3": "live. F5 to playtest with the latest code. No Studio restart, no plugin rebuild.",
+  "//4": "",
+  "//5": "First-time-only prep:",
+  "//6": "  1. Copy dev/Bootstrap.local.server.lua.example -> dev/Bootstrap.local.server.lua",
+  "//7": "  2. Replace TOKEN_GOES_HERE with a real Bridge token (mint at /settings/integrations/bridge)",
+  "//8": "  3. Adjust apiBase if you're not on http://localhost:8888",
+  "//9": "  4. The .local file is gitignored so your dev token never gets committed.",
+  "name": "RoculusBridgeDev",
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "RoculusBridge": {
+        "$path": "runtime/src"
+      },
+      "RoculusBridgeBootstrap": {
+        "$path": "dev/Bootstrap.local.server.lua"
+      }
+    }
+  }
+}

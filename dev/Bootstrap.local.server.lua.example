@@ -1,0 +1,21 @@
+--[[
+	Dev-mode bootstrap.
+
+	1. Copy this file to `Bootstrap.local.server.lua` (next to it).
+	2. Replace TOKEN_GOES_HERE with a real Bridge token from
+	   https://localhost:8888/settings/integrations/bridge (or your dashboard host).
+	3. The .local copy is gitignored; this .example file is the template.
+
+	When `rojo serve Roculus_Bridge/dev.project.json` is running and you
+	hit Connect in the Rojo Studio plugin, this script is synced into
+	ServerScriptService.RoculusBridgeBootstrap on every save. The Bridge
+	module mounted alongside is `ServerScriptService.RoculusBridge`.
+]]
+
+local Roculus = require(script.Parent.RoculusBridge)
+
+Roculus:start({
+	token   = "TOKEN_GOES_HERE",
+	apiBase = "http://localhost:8888",
+	debug   = true, -- verbose Output logging while iterating
+})

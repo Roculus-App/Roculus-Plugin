@@ -1,0 +1,7 @@
+{
+	"name": "RoculusBridge",
+	"tree": {
+		"$className": "ModuleScript",
+		"$path": "src"
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"name": "RoculusBridgePlugin",
+	"tree": {
+		"$className": "Folder",
+		"Main": {
+			"$path": "src/Main.server.lua"
+		},
+		"Config": {
+			"$path": "src/Config.lua"
+		},
+		"Ui": {
+			"$path": "src/Ui"
+		},
+		"State": {
+			"$path": "src/State.lua"
+		},
+		"Theme": {
+			"$path": "src/Theme.lua"
+		},
+		"PluginAuth": {
+			"$path": "src/PluginAuth.lua"
+		},
+		"Installer": {
+			"$path": "src/Installer.lua"
+		},
+		"EmbeddedRuntime": {
+			"$path": "../runtime/src"
+		},
+		"Roact": {
+			"$path": "vendor/Roact"
+		}
+	}
+}

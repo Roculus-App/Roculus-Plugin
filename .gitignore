@@ -1,0 +1,6 @@
+# Dev-local bootstrap holds a real Bridge token. Never commit it.
+dev/Bootstrap.local.server.lua
+
+# Build artefacts (rebuilt on demand, no need to track)
+*.rbxm
+*.rbxmx
