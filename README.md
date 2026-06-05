@@ -21,20 +21,20 @@ is what makes in-game moderation possible.
 
 ## Install
 
-### Option 1 — Creator Store (recommended)
-Install from the Roblox Creator Store:
-**https://create.roblox.com/store/asset/127499489618942**
-When a new version ships, Studio shows an **Update** button next to the installed
-plugin in **Plugins → Manage Plugins** — one click to update. (Roblox plugins
-don't update silently on their own.)
+Download **`RoculusBridgePlugin.rbxmx`** from the
+**[latest release](../../releases/latest)** (or build it yourself — see below), then:
 
-### Option 2 — From source (for studios who want to audit first)
-1. Download `RoculusBridgePlugin.rbxmx` from [Releases](../../releases), **or**
-   build it yourself (see below).
-2. Drag it into Studio and use **Plugins → Save as Local Plugin**, or drop it in
-   your local Roblox `Plugins` folder.
+1. Drop the file into your Studio plugins folder — `%LOCALAPPDATA%/Roblox/Plugins/`
+   on Windows — **or** open it in Studio and use **Plugins → Save as Local Plugin**.
+2. Restart Studio. The **Roculus Bridge** button appears in the Plugins toolbar.
+3. Open it and connect with the place token from your Roculus dashboard.
 
-A locally-installed file does **not** auto-update — replace it by hand on a new release.
+**Updating:** download the newer file and replace the old one — the Roculus dashboard
+shows a banner when a new version is out.
+
+> **Why a direct download and not the Creator Store?** Roculus Bridge installs as a
+> file you download and review yourself, so you can read and verify every line before
+> it touches your game. That auditability is the whole point of this repo.
 
 ## Permissions it requests (and why)
 
