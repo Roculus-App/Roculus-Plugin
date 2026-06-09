@@ -6,7 +6,7 @@ dashboard — so your team can moderate live games from the web.
 
 > **Source-available.** This repository is published so studios can read and
 > verify exactly what runs in their game before installing — and build the
-> plugin themselves to confirm it matches the Creator Store version.
+> plugin themselves to confirm it matches the published release.
 
 ## What it does
 
@@ -32,7 +32,7 @@ Download **`RoculusBridgePlugin.rbxmx`** from the
 **Updating:** download the newer file and replace the old one — the Roculus dashboard
 shows a banner when a new version is out.
 
-> **Why a direct download and not the Creator Store?** Roculus Bridge installs as a
+> **Why a direct download?** Roculus Bridge installs as a
 > file you download and review yourself, so you can read and verify every line before
 > it touches your game. That auditability is the whole point of this repo.
 
